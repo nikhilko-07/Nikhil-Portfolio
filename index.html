@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navcontainer">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+    </div>
+    <section id="home" class="page1">
+      <div class="page1Wrapper">
+        <div class="page1part1">
+          <div>
+            <h2>Hi There!</h2>
+            <h1 style="color: #ffffff">I'm Nikhil Kohli</h1>
+            <span id="element"></span>
+            <div>
+              <a
+                style="text-decoration: none"
+                href="docs/Nikhil Kohli Resume.docx"
+                download="Resume"
+                ><button class="cvBtn">Resume</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="page1part2">
+          <img width="50%" class="portfolioImage" src="images/Profile.png" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="page2">
+      <div class="page2part1">
+        <div class="page2cont">
+          <div class="aboutheader">
+            <h1>LET ME INTRODUCE MYSELF</h1>
+          </div>
+          <h2 style="margin-bottom: 2%; color: rgb(172, 171, 171)">
+            I've developed a passion for programming and feel that I've gained
+            valuable knowledge along the way, I think… 🤷‍♂️
+          </h2>
+          <h2 style="margin-bottom: 2%; color: rgb(172, 171, 171)">
+            I am skilled in classic technologies such as
+            <span style="color: white; font-style: italic">
+              JS, NodeJS, MongoDB, HTML, CSS, React, etc.</span
+            >
+          </h2>
+          <h2 style="margin-bottom: 2%; color: rgb(172, 171, 171)">
+            I am interested in developing innovative web technologies and
+            products, as well as exploring related fields
+          </h2>
+          <h2 style="margin-bottom: 2%; color: rgb(172, 171, 171)">
+            I have a passion for creating cutting-edge web technologies and
+            products, along with a keen interest in related areas.
+            <span style="color: white; font-style: italic">
+              Node.js and Modern Javascript Library and Frameworks like React.js
+              and Next.js.</span
+            >
+          </h2>
+        </div>
+      </div>
+      <div class="page2part2">
+        <div>
+          <img src="images/start.png" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="page3">
+      <div class="projectheader">
+        <h1>My Projects</h1>
+      </div>
+      <div class="projectgrid">
+        <div class="projectCont">
+          <div style="height: 60%; width: 100%">
+            <img
+              height="100%"
+              width="100%"
+              style="object-fit: contain"
+              src="images/Loop.png"
+              alt=""
+            />
+          </div>
+          <div style="border-top: 2px solid white; height: 20%; width: 100%">
+            <h1 style="text-align: center">LOOP MEET VIDEO CHAT</h1>
+            <h4 style="text-align: center">
+              This is a web chat application. There you can join video chat with
+              your Friends and members.
+            </h4>
+          </div>
+        </div>
+        <div class="projectCont">
+          <div style="height: 60%; width: 100%">
+            <img
+              height="100%"
+              width="100%"
+              style="object-fit: contain"
+              src="images/Zerodha.png"
+              alt=""
+            />
+          </div>
+          <div style="border-top: 2px solid white; height: 20%; width: 100%">
+            <h1 style="text-align: center">ZERODHA WEB UI</h1>
+            <h4 style="text-align: center">
+              This project focuses on frontend development using React, CSS, and
+              Bootstrap.
+            </h4>
+          </div>
+        </div>
+        <div class="projectCont">
+          <div style="height: 60%; width: 100%">
+            <img
+              height="100%"
+              width="100%"
+              style="object-fit: contain"
+              src="images/Tic Tac Toe.png"
+              alt=""
+            />
+          </div>
+          <div style="border-top: 2px solid white; height: 20%; width: 100%">
+            <h1 style="text-align: center">TIC TAC TOE GAME</h1>
+            <h4 style="text-align: center">
+              This is a web game application. There you can join and play with
+              your Friends.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="page4">
+      <div class="contactWrapper">
+        <div class="contactForm">
+          <h1>Get in touch</h1>
+          <div
+            style="
+              margin-left: 10%;
+              margin-right: 10%;
+              height: 100%;
+              width: 100%;
+            "
+          >
+            <form
+              class="form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="9fa987a9-ea90-40ba-bf10-6c057da8816f"
+              />
+              <input
+                style="width: 80%; height: 7%; margin-top: 2.5%"
+                placeholder="Your Name"
+                type="text"
+                name="name"
+              />
+              <input
+                style="width: 80%; height: 7%; margin-top: 2.5%"
+                placeholder="Email Id"
+                type="email"
+                name="email"
+              />
+              <textarea
+                name="message"
+                style="margin-top: 2.5%; width: 80%; height: 40%"
+                placeholder="What can I help you"
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contactWrapper">
+        <div class="contactForm2">
+          <h1 style="font-size: 3rem; font-style: italic">Convey Your</h1>
+          <h1 style="font-size: 3rem; font-style: italic">Ideas to Us</h1>
+          <h3 style="margin-top: 5%; font-size: 1.5rem">
+            Contact us for questions, technical assistance, or collaboration
+            opportunities via the contact information provided.
+          </h3>
+          <h3 style="margin-top: 5%; font-size: 1.5rem"></h3>
+          <h3 style="margin-top: 5%; font-size: 1.5rem">
+            <i class="bx bxl-gmail" style="color: #ffffff; margin-right: 2%"></i
+            >nikhilkohli2407@gmail.com
+          </h3>
+          <h3 style="margin-top: 5%; font-size: 1.5rem">
+            <i
+              class="bx bx-current-location"
+              style="color: #ffffff; margin-right: 2%"
+            ></i
+            >Paschim Vihar Jwalapuri,New Delhi, 110087
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div><h1>Nikhil Kohli</h1></div>
+      <div><h1>Copyright © 2024</h1></div>
+      <div class="icons">
+        <a href="https://x.com/NikhilKo_07"
+          ><i class="bx bxl-twitter" style="color: #ffffff"></i
+        ></a>
+        <a href="https://www.instagram.com/nikhilko_07/">
+          <i class="bx bxl-instagram" style="color: #ffffff"></i
+        ></a>
+
+        <a href="https://github.com/nikhilko-07">
+          <i class="bx bxl-github" style="color: #ffffff"></i
+        ></a>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

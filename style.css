@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: "Agdasima", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 1rem;
+}
+.page1 {
+  height: 100%;
+  justify-content: center;
+}
+.navbar {
+  display: flex;
+  list-style-type: none;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.icons {
+  font-size: 2rem;
+}
+.navcontainer {
+  display: flex;
+  align-items: center;
+  gap: 15%;
+  justify-content: center;
+  width: 30%;
+  border-bottom: 2px solid white;
+  font-size: 1.5rem;
+  padding: 0.5%;
+  backdrop-filter: blur(10px);
+}
+.navcontainer li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.navcontainer li a:hover,
+.navcontainer li a.active {
+  color: gray;
+}
+
+.page1Wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.page1part1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.page1part2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#element {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-top: 5%;
+}
+.cvBtn {
+  margin-top: 5%;
+  height: 4vh;
+  width: 10vw;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+.page2 {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.aboutheader h1 {
+  margin-top: 10%;
+  font-size: 3rem;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page2part1 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page2part2 {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page2part2 div {
+  margin-bottom: 15%;
+}
+.page2cont {
+  padding-right: 10%;
+  padding-left: 20%;
+  height: 100%;
+  align-items: center;
+  display: block;
+  justify-content: center;
+}
+.page3 {
+  height: 100%;
+}
+.projectheader {
+  padding-top: 7%;
+  font-size: 3rem;
+  margin-left: 5%;
+  columns: 3;
+  font-style: italic;
+}
+.projectgrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+.projectgrid div {
+  height: 30vh;
+  width: 25vw;
+  border-radius: 0.5rem;
+}
+.projectCont {
+  border: 2px solid white;
+}
+.page4 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactWrapper {
+  height: 80%;
+  width: 80%;
+  gap: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactForm {
+  border: 2px solid white;
+  height: 60%;
+  width: 40%;
+  border-radius: 0.5rem;
+}
+
+.contactForm2 {
+  height: 60%;
+  width: 60%;
+  border-radius: 0.5rem;
+}
+.contactForm h1 {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactForm button {
+  margin-left: 15%;
+  margin-top: 5%;
+  width: 50%;
+  font-size: 2rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: black;
+}
+.footer {
+  display: flex;
+  border-top: 2px solid white;
+  height: 10%;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0;
+}
+@media (min-width: 640px) {
+  .portfolioImage {
+    border-radius: 50%;
+  }
+
+  .page1part1 {
+    margin-left: 5%;
+  }
+  .portfolioImage {
+    height: 40%;
+    object-fit: contain;
+    width: 60%;
+    border-radius: 1rem;
+  }
+  .page2cont {
+    padding-left: 5%;
+  }
+  .contactForm {
+    width: 80%;
+    height: 60%;
+  }
+  .form {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    min-height: 100%;
+    display: flex;
+  }
+
+  .navcontainer {
+    width: 80%;
+    font-size: 1.2rem;
+    gap: 5%;
+  }
+  .page1Wrapper {
+    display: block;
+    height: 100vh;
+    width: 100%;
+  }
+  .portfolioImage {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  .page1part1 {
+    width: 100%;
+    height: 50%;
+    font-size: 1.8rem;
+  }
+  #element {
+    font-size: 1.5rem;
+  }
+  .cvBtn {
+    width: 30%;
+    border: 1px solid white;
+    font-size: 1rem;
+  }
+  .page1part2 {
+    width: 100%;
+    height: 50%;
+  }
+
+  .page2 {
+    height: 100%;
+    width: 100%;
+  }
+  .aboutheader h1 {
+    font-size: 2rem;
+    margin-top: 0%;
+    text-align: center;
+    padding-top: 15%;
+  }
+  .page2part1 {
+    width: 100%;
+    height: 100%;
+  }
+  .page2cont {
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 100%;
+    width: 100%;
+  }
+  .page2cont h2 {
+    padding-top: 5%;
+  }
+  .page2part2 {
+    width: 0%;
+  }
+
+  .page2part2 div {
+    width: 0%;
+    height: 0%;
+  }
+  .page2part2 div img {
+    width: 0%;
+    height: 0%;
+  }
+  .page3 {
+    height: 100%;
+    width: 100%;
+  }
+  .projectheader {
+    font-size: 1.5rem;
+    display: flex;
+    font-style: italic;
+  }
+  .projectgrid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .projectgrid div {
+    height: 30vh;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 3%;
+  }
+  .page4 {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  .contactWrapper {
+    height: 100%;
+    width: 100%;
+    gap: 0%;
+  }
+  .contactForm h1 {
+    font-size: 2rem;
+  }
+  .contactForm {
+    margin-top: 35%;
+    height: 70%;
+    width: 80%;
+  }
+  .contactForm2 {
+    padding-top: -100%;
+    height: 50%;
+    width: 80%;
+  }
+  .footer {
+    visibility: hidden;
+  }
+  .form {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navcontainer {
+    width: 40%;
+    font-size: 1.5rem;
+    gap: 10%;
+  }
+  .portfolioImage {
+    width: 90%;
+    height: 60%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  .contactForm h1 {
+    font-size: 2.5rem;
+  }
+
+  .contactForm {
+    width: 50%;
+    height: 80%;
+    padding-top: 5%;
+  }
+  .contactForm2 {
+    width: 90%;
+    height: 70%;
+    padding-left: 10%;
+  }
+  .form {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .navcontainer {
+    width: 30%;
+  }
+  .portfolioImage {
+    width: 90%;
+    height: 60%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  .page2part1 {
+    width: 50%;
+    height: 100%;
+  }
+  .page1part2 {
+    width: 50%;
+    height: 100%;
+  }
+  .page2part2 div {
+    margin-bottom: 0%;
+  }
+  .page2cont {
+    padding-top: 25%;
+    height: 100%;
+    width: 90%;
+  }
+
+  .form {
+    height: 100%;
+    width: 100%;
+  }
+}
